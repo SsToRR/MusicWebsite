@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MusicAnnotation — Детали песни</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="track-title">Загрузка…</h1>
+    <p id="track-artist">Исполнитель: …</p>
+    <p id="track-album">Альбом: …</p>
+  </header>
+  <div class="container">
+    <div class="lyrics-panel"><div id="lyrics">Загрузка текста…</div></div>
+    <div class="annotation-panel">
+      <h2>Аннотация</h2>
+      <textarea id="snippet-input" placeholder="Выделите отрывок…" rows="6"></textarea>
+      <button id="annotate-btn">Получить аннотацию</button>
+      <div id="annotation-output"></div>
+    </div>
+  </div>
+  <script src="song.js"></script>
+  <script src="annotate.js"></script>
+</body>
+</html>
